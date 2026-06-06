@@ -47,8 +47,8 @@ const typedData = rosterData as { weeks: RosterWeek[]; generated: string };
 const WEEKS = typedData.weeks;
 
 function formatDateRange(start: string, end: string): string {
-  const s = new Date(start + "T00:00:00");
-  const e = new Date(end + "T00:00:00");
+  const s = new Date(start + "T00:00:00Z");
+  const e = new Date(end + "T00:00:00Z");
   const months = [
     "jan", "feb", "mrt", "apr", "mei", "jun",
     "jul", "aug", "sep", "okt", "nov", "dec",
