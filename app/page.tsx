@@ -53,16 +53,22 @@ function formatDateRange(start: string, end: string): string {
 }
 
 function formatDayLabel(label: string): string {
-  // "Thu 18/06" → "do 18/06"
+  // "Thu 18/06" → "do 18/06" → on mobile: "do 18"
   const dayMap: Record<string, string> = {
     Mon: "ma", Tue: "di", Wed: "wo", Thu: "do", Fri: "vr", Sat: "za", Sun: "zo",
   };
+  let short = label;
   for (const [en, nl] of Object.entries(dayMap)) {
     if (label.startsWith(en)) {
-      return nl + label.slice(3);
+      short = nl + label.slice(3);
     }
   }
-  return label;
+  return short;
+}
+
+function formatDayLabelMobile(label: string): string {
+  // "Thu 18/06" → "do 18" (drop month)
+  return formatDayLabel(label).replace(/\/\d+$/, "");
 }
 
 export default function RosterPage() {
@@ -102,6 +108,7 @@ export default function RosterPage() {
   const dayColumns = week.days.map((date, i) => ({
     date,
     label: formatDayLabel(week.dayLabels[i]),
+    labelShort: formatDayLabelMobile(week.dayLabels[i]),
   }));
 
   return (
@@ -167,7 +174,10 @@ export default function RosterPage() {
             <tr>
               <th>Medewerker</th>
               {dayColumns.map((dc) => (
-                <th key={dc.date}>{dc.label}</th>
+                <th key={dc.date}>
+                  <span className="day-label-full">{dc.label}</span>
+                  <span className="day-label-short">{dc.labelShort}</span>
+                </th>
               ))}
             </tr>
           </thead>

@@ -161,11 +161,15 @@ body {
 }
 
 .roster-table th:first-child {
-  min-width: 120px;
+  min-width: 100px;
 }
 
+/* Day label responsive: full on desktop, short on mobile */
+.day-label-full { display: inline; }
+.day-label-short { display: none; }
+
 .roster-table td {
-  padding: 0.65rem 1rem;
+  padding: 0.65rem 0.75rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 0.85rem;
   white-space: nowrap;
@@ -226,22 +230,45 @@ body {
   line-height: 1.5;
 }
 
-/* Mobile card view */
+/* Mobile: compact table, short labels, stack badges */
 @media (max-width: 640px) {
   .roster-grid {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 
   .roster-table th,
   .roster-table td {
-    padding: 0.5rem 0.6rem;
-    font-size: 0.75rem;
+    padding: 0.35rem 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .roster-table th:first-child {
+    min-width: 70px;
+  }
+
+  /* Swap labels: short on mobile */
+  .day-label-full { display: none; }
+  .day-label-short { display: inline; }
+
+  .employee-name {
+    font-size: 0.72rem;
+  }
+
+  .shift-cell {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .shift-cell.empty {
+    font-size: 0.68rem;
   }
 
   .shift-badge {
+    font-size: 0.6rem;
     margin-left: 0;
     display: block;
-    margin-top: 2px;
+    margin-top: 1px;
+    padding: 0 0.3rem;
   }
 }
 
