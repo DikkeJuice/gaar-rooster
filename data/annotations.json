@@ -1,6 +1,15 @@
 {
   "annotations": [
     {
+      "id": "ann-1780740966407-ded23",
+      "week": 23,
+      "date": "2026-06-07",
+      "employee": "Ilona",
+      "note": "Dit is een test! Niets mee doen! ",
+      "action": "afwezig",
+      "timestamp": "2026-06-06T10:16:06.407Z"
+    },
+    {
       "id": "ann-1780733008378-zfpwc",
       "week": 25,
       "date": "2026-06-20",
