@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-06T08:03:49.441Z",
+  "generated": "2026-06-06T09:26:00.988Z",
   "totalWeeks": 25,
   "weeks": [
     {
@@ -92,6 +92,120 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-04-03",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Urban 010 - MS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-03",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Zwijndrecht - MH-3",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Hoofddorp Pioniers - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Diamonds Amsterdam - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Diamonds Amsterdam - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Diamonds Amsterdam - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Diamonds Amsterdam - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "13:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "The Hawks - MHU12-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus Tridents H2",
+          "opponent": "Brasschaat Braves",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-05",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Amsterdam Pirates - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-05",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Kinheim - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-05",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Amsterdam Pirates - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-05",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Adegeest - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-05",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Blue Birds - MH-2",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -176,6 +290,64 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-04-11",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Twins - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-11",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Twins - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-11",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "Saints - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-12",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "The Braves - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-12",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "Zwijndrecht - MBeeBallU12-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-12",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "The Braves - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-12",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus Tridents H2",
+          "opponent": "DSS H1",
+          "field": "Stadion"
+        }
       ]
     },
     {
@@ -284,6 +456,112 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-04-14",
+          "time": "20:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Catch - VS-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-16",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "HCAW - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-17",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "RCH-Pinguins - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-17",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Vlaardingen Holy - MS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-17",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Blue Hitters - MH-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-18",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "Zwijndrecht - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-18",
+          "time": "11:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Saints - MHU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-18",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Sparks Haarlem - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-18",
+          "time": "16:10",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Sparks Haarlem - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-19",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Jeka - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-19",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Euro Stars - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-19",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "UVV - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-19",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "UVV - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -376,6 +654,80 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-04-25",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Kennemerland Rabbits - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Kennemerland Rabbits - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Hoofddorp Pioniers - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Kennemerland Rabbits - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Kennemerland Rabbits - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Tex Town Tigers - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Hoofddorp Pioniers - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-04-25",
+          "time": "16:10",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Tex Town Tigers - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-04-26",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Euro Stars - MH-1",
+          "field": "Stadion"
+        }
       ]
     },
     {
@@ -472,6 +824,72 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-04-30",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "UVV - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-01",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "DSS - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Diamonds Amsterdam - MHU21-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Diamonds Amsterdam - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Diamonds Amsterdam - MHU21-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Diamonds Amsterdam - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "ROEF! - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-02",
+          "time": "16:10",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "ROEF! - VS-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -568,6 +986,120 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-05-08",
+          "time": "19;30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Jeka - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-08",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Portland Poema's - MH-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Scimitars Midden Nederland - MHU21-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Scimitars Midden Nederland - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Scimitars Midden Nederland - MHU21-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Scimitars Midden Nederland - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Onze Gezellen - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "15:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Red Lions - VS-3",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-09",
+          "time": "16:10",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Onze Gezellen - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-10",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Euro Stars - MHU21-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-05-10",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "RCH-Pinguins - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-10",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Tex Town Tigers - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-10",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Stags - MH-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-05-10",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Tex Town Tigers - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -668,6 +1200,168 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-05-13",
+          "time": "19:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Amsterdam Pirates - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Orioles - MHU15-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Olympia Haarlem - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "16:10",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-1",
+          "opponent": "Olympia Haarlem - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Blue Birds - MH-1",
+          "opponent": "Neptunus - MH-3",
+          "field": "D2"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "Zwijndrecht - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Kinheim - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Storks - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Kinheim - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "15:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Wizards of Boz - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "Portland Poema's - MBeeBallU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-16",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "Wassenaar - MBeeBallU12-3",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "UVV - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Urban 010 - VS-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "UVV - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "13:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Grizzlies - MHU12-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Twins - MH-2",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Kinheim - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "15:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Storks - MHU15-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-05-17",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Kinheim - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -769,6 +1463,56 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-05-27",
+          "time": "18:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Alphians - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-28",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Amsterdam Pirates - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-29",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Amsterdam Pirates - MH-2",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-05-29",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Wizards of Boz - MS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-05-30",
+          "time": "n.n.b.",
+          "club": "Neptunus",
+          "team": "",
+          "opponent": "",
+          "field": "Alle velden"
+        },
+        {
+          "date": "2026-05-31",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Schiedam - MHU15-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -882,6 +1626,264 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-06-02",
+          "time": "n.n.b.",
+          "club": "Neptunus",
+          "team": "Procter & Gamble",
+          "opponent": "",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-04",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Twins - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "09:15",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O12-1",
+          "opponent": "M.H.V. Evergreen Evergreen MO12-1",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "09:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O9-Oranje",
+          "opponent": "H.C. Feijenoord Feijenoord MO9-Roze",
+          "field": "Veld 1D"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "09:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O9-Geel",
+          "opponent": "H.C. Derby Derby MO9-4",
+          "field": "Veld 1C"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU15-1",
+          "opponent": "Amsterdam Pirates VSU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O8-Groen",
+          "opponent": "N.H.C. De IJssel IJssel MO8-1",
+          "field": "Veld 1B"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O8-Oranje",
+          "opponent": "H.C. Feijenoord Feijenoord MO8-Turquoise-mix",
+          "field": "Veld 1A"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "11:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O9-Groen",
+          "opponent": "N.H.C. De IJssel IJssel MO9-1",
+          "field": "Veld 1D"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "11:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O8-Blauw",
+          "opponent": "DMHC Dordrecht MO8-Rood",
+          "field": "Veld 1B"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "11:00",
+          "club": "HC Delfshaven",
+          "team": "Coolkids-Oranje",
+          "opponent": "H.C. Voorne Voorne MO7-Rood",
+          "field": "Veld 1A"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "11:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O12-2",
+          "opponent": "R.H.V. Leonidas Leonidas MO12-4",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU15-1",
+          "opponent": "Amsterdam Pirates VSU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "12:15",
+          "club": "HC Delfshaven",
+          "team": "Jongens O10-Blauw",
+          "opponent": "H.V. Spijkenisse Spijkenisse JO10-Zwart",
+          "field": "Veld 1CD"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "12:15",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O10-Rood",
+          "opponent": "H.C. Voorne Voorne MO10-Groen",
+          "field": "Veld 1AB"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "12:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O14-4",
+          "opponent": "H.V. Spijkenisse Spijkenisse MO14-3",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "13:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O11-1",
+          "opponent": "H.V. Spijkenisse Spijkenisse MO11-2",
+          "field": "Veld 1ABC"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Alphians - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "14:30",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O14-2",
+          "opponent": "M.H.V. Evergreen Evergreen MO14-1",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "15:30",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O14-5",
+          "opponent": "H.C. De Hoeksche Waard Hoeksche Waard MO14-4",
+          "field": "Veld 1"
+        },
+        {
+          "date": "2026-06-06",
+          "time": "16:15",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O16-3",
+          "opponent": "H.C. Capelle Capelle MO16-2",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Kinheim - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "10:30",
+          "club": "HC Delfshaven",
+          "team": "Dames 1",
+          "opponent": "L.H.C. Roomburg Roomburg D5",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Kinheim - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Portland Poema's - MHU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "12:20",
+          "club": "HC Delfshaven",
+          "team": "Heren 2",
+          "opponent": "H.C. Feijenoord Feijenoord/Victoria H3",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Sparks Haarlem - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Hoofddorp Pioniers - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "14:10",
+          "club": "HC Delfshaven",
+          "team": "Heren 4",
+          "opponent": "S.H.C. Scoop Scoop Delft H4",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Hoofddorp Pioniers - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -1007,6 +2009,280 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-06-12",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "HCAW - MH-2",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-12",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "The Hawks - MS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-12",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "The Hawks - MH-3",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "08:45",
+          "club": "HC Delfshaven",
+          "team": "Jongens O8-Groen",
+          "opponent": "Ommoordse M.H.C. Ommoord JO8-Groen",
+          "field": "Veld 1A"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "08:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O9-Rood",
+          "opponent": "M.H.V. Evergreen Evergreen MO9-1",
+          "field": "Veld 1C"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "08:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O8-Geel",
+          "opponent": "DMHC Dordrecht MO8-Geel",
+          "field": "Veld 1B"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "08:45",
+          "club": "HC Delfshaven",
+          "team": "Jongens O9-Blauw",
+          "opponent": "H.V. Victoria Victoria JO9-Groen",
+          "field": "Veld 1D"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "09:00",
+          "club": "HC Delfshaven",
+          "team": "Jongens O14-1",
+          "opponent": "M.H.V. Forcial Forcial JO14-1",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Euro Stars - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Jongens O9-Geel",
+          "opponent": "H.C. Voorne Voorne JO9-Groen",
+          "field": "Veld 1D"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O10-Geel",
+          "opponent": "H.C. De Hoeksche Waard Hoeksche Waard MO10-Blauw",
+          "field": "Veld 1AB"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Coolkids-Groen",
+          "opponent": "V.M.H.C. CARTOUCHE Cartouche JO7-Geel",
+          "field": "Veld 1C"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "10:45",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O16-2",
+          "opponent": "H.C. Derby Derby MO16-3",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "Portland Poema's - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "11:30",
+          "club": "HC Delfshaven",
+          "team": "Jongens O10-Groen",
+          "opponent": "H.C. Klein Zwitserland Klein Zwitserland JO10-Blauw",
+          "field": "Veld 1CD"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "11:30",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O10-Oranje",
+          "opponent": "H.C. Rotterdam Rotterdam MO10-Roze",
+          "field": "Veld 1AB"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "HCAW - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "12:30",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O14-3",
+          "opponent": "H.V. Berkel en Rodenrijs Berkel-Rodenrijs MO14-7",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "13:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O11-2",
+          "opponent": "H.V. Bleiswijk Bleiswijk MO11-1",
+          "field": "Veld 1ABC"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Euro Stars - VS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "14:15",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O14-1",
+          "opponent": "N.H.C. De IJssel IJssel MO14-1",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "HCAW - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "14:45",
+          "club": "HC Delfshaven",
+          "team": "Jongens O11-1",
+          "opponent": "H.C. Etten-Leur Etten-Leur JO11-1",
+          "field": "Veld 1ABC"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "16:00",
+          "club": "HC Delfshaven",
+          "team": "Meisjes O16-1",
+          "opponent": "D.H.C. HUDITO HUDITO MO16-4",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "16:30",
+          "club": "HC Delfshaven",
+          "team": "Jongens O12-1",
+          "opponent": "H.C. Feijenoord Feijenoord JO12-1",
+          "field": "Veld 1"
+        },
+        {
+          "date": "2026-06-13",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "The Hawks - MBeeBallU12-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Grizzlies - MHU15-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "10:00",
+          "club": "HC Delfshaven",
+          "team": "Dames 4",
+          "opponent": "LOHC Leiden D9",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Orioles - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "11:50",
+          "club": "HC Delfshaven",
+          "team": "Dames 3",
+          "opponent": "H.C. Barendrecht Barendrecht D2",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "13:40",
+          "club": "HC Delfshaven",
+          "team": "Heren 3",
+          "opponent": "Ring Pass Delft Ring Pass H5",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Onze Gezellen - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "15:30",
+          "club": "HC Delfshaven",
+          "team": "Heren 5",
+          "opponent": "H.C.C. Groen-Geel Groen-Geel H11",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-14",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Onze Gezellen - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -1117,6 +2393,80 @@
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven",
         "**⚠️ Za 20/06 — Jongste Jeugd Dag HCD:** Broodjes knakworst door organisatie (apart uitgiftepunt, niet in keuken). Keuken open voor reguliere verkoop. Verwacht: zeer druk. Zie `HC_Delfshaven/jongste_jeugd_dag_20_juni_2026.md`"
+      ],
+      "matches": [
+        {
+          "date": "2026-06-18",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Hoofddorp Pioniers - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-19",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Spikes - MS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-19",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Alphians - MH-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-20",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "Neptunus - MBeeBallU12-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-21",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Blue Birds - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-21",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU21-1",
+          "opponent": "Quick Amersfoort VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-21",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Thamen - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-21",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU21-1",
+          "opponent": "Quick Amersfoort VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-21",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Catch - MHU12-1",
+          "field": "D3"
+        }
       ]
     },
     {
@@ -1226,6 +2576,144 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-06-24",
+          "time": "19:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "The Hawks - MH-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Urban 010 - MS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Kennemerland Rabbits - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Kennemerland Rabbits - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "11:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Hellevoet Athletics - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Kennemerland Rabbits - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Kennemerland Rabbits - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Storks - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Brasschaat Braves - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "15:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Wizards of Boz - VS-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "Storks - MBeeBallU12-3",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-06-27",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "Schiedam - MBeeBallU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-28",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Amsterdam Pirates - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-06-28",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Blue Birds - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-28",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Jeka - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-06-28",
+          "time": "14:30",
+          "club": "HC Delfshaven",
+          "team": "Heren 2",
+          "opponent": "- Gentlemen 2 Legends",
+          "field": "Veld 2"
+        },
+        {
+          "date": "2026-06-28",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Jeka - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -1323,6 +2811,120 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-06-30",
+          "time": "19:00",
+          "club": "Neptunus",
+          "team": "NL Team DS",
+          "opponent": "Chinese Taipei",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-03",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Ridderkerk Rowdies - MH-3",
+          "field": "D2"
+        },
+        {
+          "date": "2026-07-04",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Orioles - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-04",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU15-1",
+          "opponent": "Tex Town Tigers VSU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-04",
+          "time": "12:40",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU15-1",
+          "opponent": "Tex Town Tigers VSU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-04",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Catch - VS-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "HCAW - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Saints - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "HCAW - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "13:30",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU21-1",
+          "opponent": "Almaria Vitrix VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-2",
+          "opponent": "Hoofddorp Pioniers - MH-2",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Blue Birds - MH-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Blue Birds - MHU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-05",
+          "time": "15:30",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU21-1",
+          "opponent": "Almaria Vitrix VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -1424,6 +3026,88 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-07-10",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Vlaardingen Holy - MS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Zwijndrecht - MHU12-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Scimitars Midden Nederland - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Scimitars Midden Nederland - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "UVV - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "BB/Nept VSU21-1",
+          "opponent": "Centrals VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU21-1",
+          "opponent": "Scimitars Midden Nederland - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "12:30",
+          "club": "Neptunus",
+          "team": "Rotterdam Unicorns - MHU15-1",
+          "opponent": "Scimitars Midden Nederland - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-07-11",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "UVV - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-07-12",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Twins - MHU21-1",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -1509,6 +3193,16 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-07-17",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Vlaardingen Holy - MH-2",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -1598,6 +3292,16 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-07-23",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Kinheim - MH-1",
+          "field": "Stadion"
+        }
       ]
     },
     {
@@ -1695,6 +3399,24 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-08-01",
+          "time": "12:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Amsterdam Pirates - MH-1",
+          "field": "Stadion"
+        },
+        {
+          "date": "2026-08-01",
+          "time": "14:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-1",
+          "opponent": "Amsterdam Pirates - MH-1",
+          "field": "Stadion"
+        }
       ]
     },
     {
@@ -1788,6 +3510,64 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-1",
+          "opponent": "Grizzlies - MHU15-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Grizzlies - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Red Lions - VS-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Grizzlies - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "13:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Alphians - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Grizzlies - VSU21-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-23",
+          "time": "15:50",
+          "club": "Neptunus",
+          "team": "Neptunus - VSU21-1",
+          "opponent": "Grizzlies - VSU21-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -1885,6 +3665,80 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-08-28",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Spikes - MS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-28",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Zwijndrecht - MH-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-08-29",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "Schiedam - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-08-29",
+          "time": "11:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Euro Stars - MHU12-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-29",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Red Lions - VS-3",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-29",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "The Hawks - MBeeBallU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-30",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Schiedam - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-08-30",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Adegeest - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-08-30",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Ridderkerk Rowdies - MH-2",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -1974,6 +3828,56 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Spikes - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-06",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Brasschaat Braves - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-06",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Orioles - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-09-06",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Brasschaat Braves - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-06",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Schiedam - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-06",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Saints - MH-3",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -2071,6 +3975,72 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-09-11",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MS-1",
+          "opponent": "Wizards of Boz - MS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-11",
+          "time": "19:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-4",
+          "opponent": "Orioles - MH-2",
+          "field": "D2"
+        },
+        {
+          "date": "2026-09-12",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Storks - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-09-12",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "The Hawks - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-09-12",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "Wassenaar - MBeeBallU12-4",
+          "field": "D3"
+        },
+        {
+          "date": "2026-09-13",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU15-2",
+          "opponent": "Red Lions - MHU15-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-09-13",
+          "time": "10:30",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-2",
+          "opponent": "Euro Stars - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-13",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Schiedam - MH-3",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -2164,6 +4134,80 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-09-15",
+          "time": "n.n.b.",
+          "club": "Neptunus",
+          "team": "G-Honkbal via Sportbedrijf",
+          "opponent": "",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-19",
+          "time": "11:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "The Hawks - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-19",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - VS-3",
+          "opponent": "Alphians - VS-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-19",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-1",
+          "opponent": "Saints - MBeeBallU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Hoofddorp Pioniers - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU21-1",
+          "opponent": "Brasschaat Braves - MHU21-1",
+          "field": "D2"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "11:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "Hoofddorp Pioniers - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Storks - MHU12-2",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-20",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Euro Stars - MH-3",
+          "field": "D2"
+        }
       ]
     },
     {
@@ -2253,6 +4297,40 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-09-26",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-3",
+          "opponent": "Blue Hitters - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-09-26",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-2",
+          "opponent": "Neptunus - MBeeBallU12-1",
+          "field": "D3"
+        },
+        {
+          "date": "2026-09-26",
+          "time": "9:30",
+          "club": "Neptunus",
+          "team": "Neptunus - MBeeBallU12-3",
+          "opponent": "Orioles - MBeeBallU12-2",
+          "field": "D3"
+        },
+        {
+          "date": "2026-09-27",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-2",
+          "opponent": "Storks - MHU12-1",
+          "field": "D3"
+        }
       ]
     },
     {
@@ -2342,6 +4420,24 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-10-04",
+          "time": "11:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "RCH-Pinguins - MHU12-1",
+          "field": "D1"
+        },
+        {
+          "date": "2026-10-04",
+          "time": "12:25",
+          "club": "Neptunus",
+          "team": "Neptunus - MHU12-1",
+          "opponent": "RCH-Pinguins - MHU12-1",
+          "field": "D1"
+        }
       ]
     },
     {
@@ -2431,6 +4527,24 @@
       ],
       "notes": [
         "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ],
+      "matches": [
+        {
+          "date": "2026-10-31",
+          "time": "10:00",
+          "club": "Neptunus",
+          "team": "Elvis Weerwind jaarlijks SB uitje",
+          "opponent": "",
+          "field": "D1"
+        },
+        {
+          "date": "2026-10-31",
+          "time": "14:00",
+          "club": "Neptunus",
+          "team": "Neptunus - MH-3",
+          "opponent": "Portland Poema's - MH-1",
+          "field": "D2"
+        }
       ]
     }
   ]

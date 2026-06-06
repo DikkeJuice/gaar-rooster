@@ -3,7 +3,17 @@
 import { useState, useMemo } from "react";
 import rosterData from "@/data/roster-data.json";
 import AnnotationPanel from "./AnnotationPanel";
+import MatchList from "./MatchList";
 import AuthGate from "./AuthGate";
+
+interface Match {
+  date: string;
+  time: string;
+  club: string;
+  team: string;
+  opponent: string;
+  field: string;
+}
 
 interface Shift {
   start: string;
@@ -28,6 +38,7 @@ interface RosterWeek {
   dayLabels: string[];
   employees: RosterEmployee[];
   notes: string[];
+  matches: Match[];
 }
 
 type ClubFilter = "all" | "NEP" | "HCD";
@@ -244,27 +255,40 @@ export default function RosterPage() {
         )}
       </div>
 
-      {/* Notes (filtered: no legend, render markdown bold + code) */}
+      {/* Notes + Matches */}
       {(() => {
         const realNotes = week.notes.filter(
           (n) => !n.startsWith("**ZK** =") && !n.startsWith("ZK =")
         );
-        if (realNotes.length === 0) return null;
 
-        function renderNote(text: string) {
-          // Bold: **text** → <strong>
-          let html = text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-          // Inline code: `text` → <code>
-          html = html.replace(/`(.+?)`/g, "<code>$1</code>");
-          return html;
-        }
+        const filteredMatches = clubFilter === "all"
+          ? week.matches
+          : week.matches.filter((m) =>
+              clubFilter === "NEP" ? m.club === "Neptunus" : m.club === "HC Delfshaven"
+            );
+
+        if (realNotes.length === 0 && filteredMatches.length === 0) return null;
 
         return (
-          <div className="roster-notes">
-            {realNotes.map((n, i) => (
-              <div key={i} dangerouslySetInnerHTML={{ __html: renderNote(n) }} />
-            ))}
-          </div>
+          <>
+            {realNotes.length > 0 && (
+              <div className="roster-notes">
+                {realNotes.map((n, i) => (
+                  <div
+                    key={i}
+                    dangerouslySetInnerHTML={{
+                      __html: (() => {
+                        let html = n.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+                        html = html.replace(/`(.+?)`/g, "<code>$1</code>");
+                        return html;
+                      })(),
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+            <MatchList matches={filteredMatches} />
+          </>
         );
       })()}
 

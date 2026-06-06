@@ -14,6 +14,15 @@ interface Shift {
   location: string; // "NEP" or "HCD"
 }
 
+interface Match {
+  date: string;
+  time: string;
+  club: string; // "Neptunus" or "HC Delfshaven"
+  team: string;
+  opponent: string;
+  field: string;
+}
+
 interface EmployeeShifts {
   [date: string]: Shift | null; // null = day off ("—")
 }
@@ -29,6 +38,7 @@ interface RosterWeek {
     shifts: EmployeeShifts;
   }[];
   notes: string[]; // any special notes at bottom of file
+  matches: Match[]; // matches for this week
 }
 
 const ROSTER_DIR = path.join(__dirname, "..", "data", "rosters");
@@ -202,7 +212,41 @@ function parseRosterBody(
     employees.push({ name, shifts });
   }
 
-  return { week, startDate, endDate, days, dayLabels, employees, notes };
+  return { week, startDate, endDate, days, dayLabels, employees, notes, matches: [] };
+}
+
+function parseMatchCSV(filePath: string, club: string): Match[] {
+  const content = fs.readFileSync(filePath, "utf-8");
+  const lines = content.split("\n");
+  if (lines.length < 2) return [];
+
+  const headers = lines[0].split(",").map((h) => h.trim().toLowerCase());
+  const dateIdx = headers.indexOf("datum");
+  const timeIdx = headers.indexOf("tijd");
+  const teamIdx = headers.indexOf("team");
+  const opponentIdx = headers.indexOf("tegenstander");
+  const fieldIdx = headers.indexOf("veld");
+
+  const matches: Match[] = [];
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    const cells = line.split(",").map((c) => c.trim());
+    const date = cells[dateIdx] || "";
+    if (!date || !date.startsWith("2026-")) continue;
+
+    matches.push({
+      date,
+      time: cells[timeIdx] || "",
+      club,
+      team: cells[teamIdx] || "",
+      opponent: cells[opponentIdx] || "",
+      field: fieldIdx >= 0 ? cells[fieldIdx] || "" : "",
+    });
+  }
+
+  return matches;
 }
 
 function main() {
@@ -227,6 +271,23 @@ function main() {
   // Sort by week number
   weeks.sort((a, b) => a.week - b.week);
 
+  // Parse match data
+  const DATA_DIR = path.join(__dirname, "..", "data");
+  const nepMatches = parseMatchCSV(path.join(DATA_DIR, "neptunus_wedstrijden_2026.csv"), "Neptunus");
+  const hcdMatches = parseMatchCSV(path.join(DATA_DIR, "hcd_wedstrijden_2026.csv"), "HC Delfshaven");
+  const allMatches = [...nepMatches, ...hcdMatches];
+
+  // Assign matches to weeks
+  for (const w of weeks) {
+    w.matches = allMatches.filter(
+      (m) => m.date >= w.startDate && m.date <= w.endDate
+    );
+    // Sort by date, then time
+    w.matches.sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time));
+  }
+
+  const totalMatches = weeks.reduce((sum, w) => sum + w.matches.length, 0);
+
   // Output
   const output = {
     generated: new Date().toISOString(),
@@ -245,6 +306,7 @@ function main() {
     }
   }
   console.log(`   Employees: ${[...allEmployees].join(", ")}`);
+  console.log(`   Matches: ${totalMatches}`);
   console.log(`   Date range: ${weeks[0]?.startDate} → ${weeks[weeks.length - 1]?.endDate}`);
 }
 
