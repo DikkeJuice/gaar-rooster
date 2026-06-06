@@ -124,14 +124,13 @@ export default function RosterPage() {
         </button>
       </div>
 
-      {/* Quick week jump */}
-      <div className="club-filter" style={{ justifyContent: "center", gap: "0.35rem", flexWrap: "wrap" }}>
+      {/* Quick week jump — horizontal scroll strip */}
+      <div className="week-strip">
         {WEEKS.map((w, i) => (
           <button
             key={w.week}
             onClick={() => setWeekIdx(i)}
             className={i === weekIdx ? "current" : ""}
-            style={{ fontSize: "0.75rem", padding: "0.25rem 0.6rem" }}
           >
             W{w.week}
           </button>
