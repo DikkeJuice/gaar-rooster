@@ -1,0 +1,2437 @@
+{
+  "generated": "2026-06-06T07:52:51.556Z",
+  "totalWeeks": 25,
+  "weeks": [
+    {
+      "week": 14,
+      "startDate": "2026-03-30",
+      "endDate": "2026-04-05",
+      "days": [
+        "2026-04-02",
+        "2026-04-03",
+        "2026-04-04",
+        "2026-04-05"
+      ],
+      "dayLabels": [
+        "Thu 02/04",
+        "Fri 03/04",
+        "Sat 04/04",
+        "Sun 05/04"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-04": {
+              "start": "11:00",
+              "end": "17:30",
+              "location": "NEP"
+            },
+            "2026-04-05": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": null,
+            "2026-04-04": null,
+            "2026-04-05": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": null,
+            "2026-04-04": null,
+            "2026-04-05": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": null,
+            "2026-04-04": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            },
+            "2026-04-05": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": null,
+            "2026-04-04": null,
+            "2026-04-05": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-04-02": null,
+            "2026-04-03": null,
+            "2026-04-04": null,
+            "2026-04-05": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 15,
+      "startDate": "2026-04-06",
+      "endDate": "2026-04-12",
+      "days": [
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12"
+      ],
+      "dayLabels": [
+        "Thu 09/04",
+        "Fri 10/04",
+        "Sat 11/04",
+        "Sun 12/04"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-04-12": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": null,
+            "2026-04-12": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": null,
+            "2026-04-12": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": null,
+            "2026-04-12": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": null,
+            "2026-04-12": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-04-09": null,
+            "2026-04-10": null,
+            "2026-04-11": null,
+            "2026-04-12": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 16,
+      "startDate": "2026-04-13",
+      "endDate": "2026-04-19",
+      "days": [
+        "2026-04-16",
+        "2026-04-17",
+        "2026-04-18",
+        "2026-04-19"
+      ],
+      "dayLabels": [
+        "Thu 16/04",
+        "Fri 17/04",
+        "Sat 18/04",
+        "Sun 19/04"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-04-16": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-17": {
+              "start": "17:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-18": {
+              "start": "12:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-04-19": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-04-16": {
+              "start": "17:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-17": null,
+            "2026-04-18": null,
+            "2026-04-19": {
+              "start": "10:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-04-16": {
+              "start": "18:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-17": null,
+            "2026-04-18": null,
+            "2026-04-19": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-04-16": null,
+            "2026-04-17": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-04-18": {
+              "start": "11:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-04-19": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-04-16": null,
+            "2026-04-17": null,
+            "2026-04-18": null,
+            "2026-04-19": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-04-16": null,
+            "2026-04-17": null,
+            "2026-04-18": null,
+            "2026-04-19": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 17,
+      "startDate": "2026-04-20",
+      "endDate": "2026-04-26",
+      "days": [
+        "2026-04-23",
+        "2026-04-24",
+        "2026-04-25",
+        "2026-04-26"
+      ],
+      "dayLabels": [
+        "Thu 23/04",
+        "Fri 24/04",
+        "Sat 25/04",
+        "Sun 26/04"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": {
+              "start": "11:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-04-26": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": null,
+            "2026-04-26": {
+              "start": "11:00",
+              "end": "18:00",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": null,
+            "2026-04-26": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": {
+              "start": "12:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-04-26": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": {
+              "start": "13:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-04-26": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-04-23": null,
+            "2026-04-24": null,
+            "2026-04-25": null,
+            "2026-04-26": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 18,
+      "startDate": "2026-04-27",
+      "endDate": "2026-05-03",
+      "days": [
+        "2026-04-30",
+        "2026-05-01",
+        "2026-05-02",
+        "2026-05-03"
+      ],
+      "dayLabels": [
+        "Thu 30/04",
+        "Fri 01/05",
+        "Sat 02/05",
+        "Sun 03/05"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-04-30": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-01": null,
+            "2026-05-02": {
+              "start": "12:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-03": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-04-30": null,
+            "2026-05-01": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-02": null,
+            "2026-05-03": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-04-30": null,
+            "2026-05-01": null,
+            "2026-05-02": null,
+            "2026-05-03": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-04-30": null,
+            "2026-05-01": null,
+            "2026-05-02": {
+              "start": "11:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-03": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-04-30": null,
+            "2026-05-01": null,
+            "2026-05-02": {
+              "start": "13:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-03": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-04-30": null,
+            "2026-05-01": null,
+            "2026-05-02": null,
+            "2026-05-03": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 19,
+      "startDate": "2026-05-04",
+      "endDate": "2026-05-10",
+      "days": [
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10"
+      ],
+      "dayLabels": [
+        "Thu 07/05",
+        "Fri 08/05",
+        "Sat 09/05",
+        "Sun 10/05"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-09": {
+              "start": "12:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-10": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": null,
+            "2026-05-09": null,
+            "2026-05-10": {
+              "start": "10:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": null,
+            "2026-05-09": null,
+            "2026-05-10": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": null,
+            "2026-05-09": {
+              "start": "11:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-10": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": null,
+            "2026-05-09": {
+              "start": "13:00",
+              "end": "20:10",
+              "location": "NEP"
+            },
+            "2026-05-10": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-05-07": null,
+            "2026-05-08": null,
+            "2026-05-09": null,
+            "2026-05-10": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 20,
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-17",
+      "days": [
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17"
+      ],
+      "dayLabels": [
+        "Thu 14/05",
+        "Fri 15/05",
+        "Sat 16/05",
+        "Sun 17/05"
+      ],
+      "employees": [
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-05-14": {
+              "start": "11:00",
+              "end": "23:00",
+              "location": "NEP"
+            },
+            "2026-05-15": null,
+            "2026-05-16": {
+              "start": "12:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-05-17": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-05-14": null,
+            "2026-05-15": null,
+            "2026-05-16": null,
+            "2026-05-17": {
+              "start": "11:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-05-14": null,
+            "2026-05-15": null,
+            "2026-05-16": null,
+            "2026-05-17": {
+              "start": "12:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-05-14": null,
+            "2026-05-15": null,
+            "2026-05-16": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-05-17": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-05-14": null,
+            "2026-05-15": null,
+            "2026-05-16": {
+              "start": "13:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-05-17": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-05-14": null,
+            "2026-05-15": null,
+            "2026-05-16": null,
+            "2026-05-17": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 22,
+      "startDate": "2026-05-25",
+      "endDate": "2026-05-31",
+      "days": [
+        "2026-05-28",
+        "2026-05-29",
+        "2026-05-30",
+        "2026-05-31"
+      ],
+      "dayLabels": [
+        "Thu 28/05",
+        "Fri 29/05",
+        "Sat 30/05",
+        "Sun 31/05"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-05-28": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-29": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-05-28": {
+              "start": "17:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-05-28": {
+              "start": "18:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-05-28": null,
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-05-28": null,
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-05-28": null,
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-05-28": null,
+            "2026-05-29": null,
+            "2026-05-30": null,
+            "2026-05-31": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 23,
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-07",
+      "days": [
+        "2026-06-04",
+        "2026-06-05",
+        "2026-06-06",
+        "2026-06-07"
+      ],
+      "dayLabels": [
+        "Thu 04/06",
+        "Fri 05/06",
+        "Sat 06/06",
+        "Sun 07/06"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-06-04": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-05": null,
+            "2026-06-06": {
+              "start": "10:00",
+              "end": "17:00",
+              "location": "NEP"
+            },
+            "2026-06-07": {
+              "start": "11:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": {
+              "start": "08:45",
+              "end": "14:30",
+              "location": "HCD"
+            },
+            "2026-06-07": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": null,
+            "2026-06-07": {
+              "start": "12:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": null,
+            "2026-06-07": {
+              "start": "10:00",
+              "end": "18:09",
+              "location": "HCD"
+            }
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": {
+              "start": "14:30",
+              "end": "20:15",
+              "location": "HCD"
+            },
+            "2026-06-07": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": null,
+            "2026-06-07": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-06-04": null,
+            "2026-06-05": null,
+            "2026-06-06": null,
+            "2026-06-07": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 24,
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-14",
+      "days": [
+        "2026-06-11",
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-14"
+      ],
+      "dayLabels": [
+        "Thu 11/06",
+        "Fri 12/06",
+        "Sat 13/06",
+        "Sun 14/06"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-13": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-06-14": {
+              "start": "10:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": {
+              "start": "17:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-13": {
+              "start": "13:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-06-14": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": null,
+            "2026-06-13": null,
+            "2026-06-14": {
+              "start": "09:30",
+              "end": "14:30",
+              "location": "HCD"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": null,
+            "2026-06-13": null,
+            "2026-06-14": {
+              "start": "14:30",
+              "end": "19:30",
+              "location": "HCD"
+            }
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": null,
+            "2026-06-13": {
+              "start": "12:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-06-14": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": null,
+            "2026-06-13": {
+              "start": "08:15",
+              "end": "14:22",
+              "location": "HCD"
+            },
+            "2026-06-14": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-06-11": null,
+            "2026-06-12": null,
+            "2026-06-13": {
+              "start": "14:22",
+              "end": "20:30",
+              "location": "HCD"
+            },
+            "2026-06-14": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 25,
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-21",
+      "days": [
+        "2026-06-18",
+        "2026-06-19",
+        "2026-06-20",
+        "2026-06-21"
+      ],
+      "dayLabels": [
+        "Thu 18/06",
+        "Fri 19/06",
+        "Sat 20/06",
+        "Sun 21/06"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-06-18": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-19": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-20": null,
+            "2026-06-21": {
+              "start": "11:00",
+              "end": "18:00",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": {
+              "start": "09:00",
+              "end": "15:00",
+              "location": "HCD"
+            },
+            "2026-06-21": {
+              "start": "12:00",
+              "end": "18:00",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": null,
+            "2026-06-21": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": null,
+            "2026-06-21": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": {
+              "start": "10:00",
+              "end": "16:00",
+              "location": "HCD"
+            },
+            "2026-06-21": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": null,
+            "2026-06-21": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-06-18": null,
+            "2026-06-19": null,
+            "2026-06-20": null,
+            "2026-06-21": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven",
+        "**⚠️ Za 20/06 — Jongste Jeugd Dag HCD:** Broodjes knakworst door organisatie (apart uitgiftepunt, niet in keuken). Keuken open voor reguliere verkoop. Verwacht: zeer druk. Zie `HC_Delfshaven/jongste_jeugd_dag_20_juni_2026.md`"
+      ]
+    },
+    {
+      "week": 26,
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-28",
+      "days": [
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-28"
+      ],
+      "dayLabels": [
+        "Thu 25/06",
+        "Fri 26/06",
+        "Sat 27/06",
+        "Sun 28/06"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-06-27": {
+              "start": "11:00",
+              "end": "18:00",
+              "location": "NEP"
+            },
+            "2026-06-28": {
+              "start": "10:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": {
+              "start": "12:00",
+              "end": "18:00",
+              "location": "NEP"
+            },
+            "2026-06-28": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": null,
+            "2026-06-28": {
+              "start": "14:00",
+              "end": "18:30",
+              "location": "HCD"
+            }
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": null,
+            "2026-06-28": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": {
+              "start": "13:00",
+              "end": "18:00",
+              "location": "NEP"
+            },
+            "2026-06-28": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": null,
+            "2026-06-28": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-06-25": null,
+            "2026-06-26": null,
+            "2026-06-27": null,
+            "2026-06-28": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 27,
+      "startDate": "2026-06-29",
+      "endDate": "2026-07-05",
+      "days": [
+        "2026-07-02",
+        "2026-07-03",
+        "2026-07-04",
+        "2026-07-05"
+      ],
+      "dayLabels": [
+        "Thu 02/07",
+        "Fri 03/07",
+        "Sat 04/07",
+        "Sun 05/07"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": {
+              "start": "10:00",
+              "end": "17:00",
+              "location": "NEP"
+            },
+            "2026-07-05": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": {
+              "start": "12:00",
+              "end": "18:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-07-02": null,
+            "2026-07-03": null,
+            "2026-07-04": null,
+            "2026-07-05": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 28,
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-12",
+      "days": [
+        "2026-07-09",
+        "2026-07-10",
+        "2026-07-11",
+        "2026-07-12"
+      ],
+      "dayLabels": [
+        "Thu 09/07",
+        "Fri 10/07",
+        "Sat 11/07",
+        "Sun 12/07"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-07-11": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": {
+              "start": "12:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": null,
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": null,
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": {
+              "start": "13:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": null,
+            "2026-07-12": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-07-09": null,
+            "2026-07-10": null,
+            "2026-07-11": null,
+            "2026-07-12": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 29,
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-19",
+      "days": [
+        "2026-07-16",
+        "2026-07-17",
+        "2026-07-18",
+        "2026-07-19"
+      ],
+      "dayLabels": [
+        "Thu 16/07",
+        "Fri 17/07",
+        "Sat 18/07",
+        "Sun 19/07"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-07-16": null,
+            "2026-07-17": null,
+            "2026-07-18": null,
+            "2026-07-19": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 30,
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "days": [
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26"
+      ],
+      "dayLabels": [
+        "Thu 23/07",
+        "Fri 24/07",
+        "Sat 25/07",
+        "Sun 26/07"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-07-23": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-07-23": null,
+            "2026-07-24": null,
+            "2026-07-25": null,
+            "2026-07-26": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 31,
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-02",
+      "days": [
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02"
+      ],
+      "dayLabels": [
+        "Thu 30/07",
+        "Fri 31/07",
+        "Sat 01/08",
+        "Sun 02/08"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": {
+              "start": "11:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": {
+              "start": "12:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": {
+              "start": "13:00",
+              "end": "18:30",
+              "location": "NEP"
+            },
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": null,
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": null,
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": null,
+            "2026-08-02": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-07-30": null,
+            "2026-07-31": null,
+            "2026-08-01": null,
+            "2026-08-02": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 34,
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-23",
+      "days": [
+        "2026-08-20",
+        "2026-08-21",
+        "2026-08-22",
+        "2026-08-23"
+      ],
+      "dayLabels": [
+        "Thu 20/08",
+        "Fri 21/08",
+        "Sat 22/08",
+        "Sun 23/08"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": {
+              "start": "10:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": {
+              "start": "11:00",
+              "end": "18:50",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-08-20": null,
+            "2026-08-21": null,
+            "2026-08-22": null,
+            "2026-08-23": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 35,
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-30",
+      "days": [
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30"
+      ],
+      "dayLabels": [
+        "Thu 27/08",
+        "Fri 28/08",
+        "Sat 29/08",
+        "Sun 30/08"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-08-29": {
+              "start": "10:00",
+              "end": "17:00",
+              "location": "NEP"
+            },
+            "2026-08-30": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-08-27": null,
+            "2026-08-28": null,
+            "2026-08-29": null,
+            "2026-08-30": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 36,
+      "startDate": "2026-08-31",
+      "endDate": "2026-09-06",
+      "days": [
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06"
+      ],
+      "dayLabels": [
+        "Thu 03/09",
+        "Fri 04/09",
+        "Sat 05/09",
+        "Sun 06/09"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-09-03": null,
+            "2026-09-04": null,
+            "2026-09-05": null,
+            "2026-09-06": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 37,
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-13",
+      "days": [
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13"
+      ],
+      "dayLabels": [
+        "Thu 10/09",
+        "Fri 11/09",
+        "Sat 12/09",
+        "Sun 13/09"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": {
+              "start": "16:30",
+              "end": "23:30",
+              "location": "NEP"
+            },
+            "2026-09-12": {
+              "start": "10:00",
+              "end": "14:00",
+              "location": "NEP"
+            },
+            "2026-09-13": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-09-10": null,
+            "2026-09-11": null,
+            "2026-09-12": null,
+            "2026-09-13": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 38,
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-20",
+      "days": [
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20"
+      ],
+      "dayLabels": [
+        "Thu 17/09",
+        "Fri 18/09",
+        "Sat 19/09",
+        "Sun 20/09"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": {
+              "start": "10:00",
+              "end": "17:00",
+              "location": "NEP"
+            },
+            "2026-09-20": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-09-17": null,
+            "2026-09-18": null,
+            "2026-09-19": null,
+            "2026-09-20": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 39,
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-27",
+      "days": [
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-26",
+        "2026-09-27"
+      ],
+      "dayLabels": [
+        "Thu 24/09",
+        "Fri 25/09",
+        "Sat 26/09",
+        "Sun 27/09"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": {
+              "start": "10:00",
+              "end": "14:00",
+              "location": "NEP"
+            },
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-09-24": null,
+            "2026-09-25": null,
+            "2026-09-26": null,
+            "2026-09-27": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 40,
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-04",
+      "days": [
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04"
+      ],
+      "dayLabels": [
+        "Thu 01/10",
+        "Fri 02/10",
+        "Sat 03/10",
+        "Sun 04/10"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": {
+              "start": "10:30",
+              "end": "15:24",
+              "location": "NEP"
+            }
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-10-01": null,
+            "2026-10-02": null,
+            "2026-10-03": null,
+            "2026-10-04": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    },
+    {
+      "week": 44,
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-01",
+      "days": [
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "dayLabels": [
+        "Thu 29/10",
+        "Fri 30/10",
+        "Sat 31/10",
+        "Sun 01/11"
+      ],
+      "employees": [
+        {
+          "name": "Monique",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": {
+              "start": "10:00",
+              "end": "17:30",
+              "location": "NEP"
+            },
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Lenno",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Nine",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Ilona",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Ise",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Linh",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        },
+        {
+          "name": "Ravi",
+          "shifts": {
+            "2026-10-29": null,
+            "2026-10-30": null,
+            "2026-10-31": null,
+            "2026-11-01": null
+          }
+        }
+      ],
+      "notes": [
+        "**ZK** = Zelfstandig Werkend Kok | **MK** = Medewerker Keuken | **NEP** = Neptunus | **HCD** = HC Delfshaven"
+      ]
+    }
+  ]
+}
