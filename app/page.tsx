@@ -248,6 +248,10 @@ export default function RosterPage() {
       <AnnotationPanel
         week={week.week}
         employees={week.employees.map((e) => e.name)}
+        days={week.days.map((date, i) => ({
+          date,
+          label: formatDayLabel(week.dayLabels[i]),
+        }))}
       />
 
       {/* Footer */}

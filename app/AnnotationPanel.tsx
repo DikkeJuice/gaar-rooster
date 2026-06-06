@@ -16,6 +16,11 @@ interface AnnotationsFile {
   annotations: Annotation[];
 }
 
+interface DayInfo {
+  date: string;
+  label: string;
+}
+
 const LOCAL_KEY = "gaar-rooster-annotations";
 
 function loadLocal(): Annotation[] {
@@ -34,17 +39,30 @@ function saveLocal(annotations: Annotation[]) {
   } catch { /* ignore quota errors */ }
 }
 
+function formatDateLabel(dateStr: string): string {
+  const d = new Date(dateStr + "T00:00:00");
+  const days = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+  const day = days[d.getUTCDay()];
+  const date = d.getUTCDate();
+  const months = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+  const month = months[d.getUTCMonth()];
+  return `${day} ${date} ${month}`;
+}
+
 export default function AnnotationPanel({
   week,
   employees,
+  days,
 }: {
   week: number;
   employees: string[];
+  days: DayInfo[];
 }) {
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
   const [formOpen, setFormOpen] = useState(false);
   const [employee, setEmployee] = useState("");
   const [action, setAction] = useState<"afwezig" | "beschikbaar" | "notitie">("notitie");
+  const [selectedDate, setSelectedDate] = useState("");
   const [note, setNote] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
@@ -81,6 +99,7 @@ export default function AnnotationPanel({
 
   const handleSubmit = async () => {
     if (!employee) return;
+    if (!selectedDate && days.length > 0) return;
 
     setSubmitting(true);
     setErrorMsg("");
@@ -92,7 +111,7 @@ export default function AnnotationPanel({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           week,
-          date: new Date().toISOString().split("T")[0],
+          date: selectedDate || new Date().toISOString().split("T")[0],
           employee,
           note,
           action,
@@ -115,6 +134,7 @@ export default function AnnotationPanel({
       setEmployee("");
       setNote("");
       setAction("notitie");
+      setSelectedDate("");
       setFormOpen(false);
 
       setTimeout(() => setSuccessMsg(""), 4000);
@@ -208,6 +228,28 @@ export default function AnnotationPanel({
               <option value="Anders">Anders...</option>
             </select>
 
+            {days.length > 0 && (
+              <select
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                style={{
+                  padding: "0.5rem",
+                  border: "1px solid rgba(0,0,0,0.12)",
+                  borderRadius: "6px",
+                  fontFamily: "inherit",
+                  fontSize: "0.85rem",
+                }}
+              >
+                <option value="">Welke shift?</option>
+                {days.map((d) => (
+                  <option key={d.date} value={d.date}>
+                    {d.label}
+                  </option>
+                ))}
+                <option value="">Hele week</option>
+              </select>
+            )}
+
             <select
               value={action}
               onChange={(e) => setAction(e.target.value as typeof action)}
@@ -298,6 +340,9 @@ export default function AnnotationPanel({
                 <strong style={{ color: "var(--ink-indigo)" }}>
                   {a.employee}
                 </strong>
+                <span style={{ color: "var(--slate)", fontSize: "0.78rem" }}>
+                  W{a.week} · {formatDateLabel(a.date)}
+                </span>
                 <span style={{ color: actionColor(a), fontWeight: 500 }}>
                   {actionLabel(a)}
                 </span>
