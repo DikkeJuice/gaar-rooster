@@ -104,12 +104,21 @@ export default function RosterPage() {
     });
   }, [week, clubFilter]);
 
-  // Day columns to show (all 4 days: Thu-Sun)
-  const dayColumns = week.days.map((date, i) => ({
-    date,
-    label: formatDayLabel(week.dayLabels[i]),
-    labelShort: formatDayLabelMobile(week.dayLabels[i]),
-  }));
+  // Day columns — hide days with zero shifts for current club filter
+  const dayColumns = useMemo(() => {
+    const allDays = week.days.map((date, i) => ({
+      date,
+      label: formatDayLabel(week.dayLabels[i]),
+      labelShort: formatDayLabelMobile(week.dayLabels[i]),
+    }));
+
+    // Check which employees to scan for shifts
+    const pool = clubFilter === "all" ? week.employees : filteredEmployees;
+
+    return allDays.filter((day) => {
+      return pool.some((emp) => emp.shifts[day.date] !== null);
+    });
+  }, [week, clubFilter, filteredEmployees]);
 
   return (
     <AuthGate>
@@ -169,6 +178,20 @@ export default function RosterPage() {
 
       {/* Roster grid */}
       <div className="roster-grid">
+        {dayColumns.length === 0 ? (
+          <div
+            style={{
+              textAlign: "center",
+              padding: "2.5rem 1rem",
+              color: "var(--slate)",
+              background: "white",
+              borderRadius: "8px",
+              fontSize: "0.9rem",
+            }}
+          >
+            Geen diensten voor {clubFilter === "all" ? "deze week" : clubFilter === "NEP" ? "Neptunus" : "HC Delfshaven"} in week {week.week}.
+          </div>
+        ) : (
         <table className="roster-table">
           <thead>
             <tr>
@@ -188,7 +211,7 @@ export default function RosterPage() {
                   colSpan={dayColumns.length + 1}
                   style={{ textAlign: "center", padding: "2rem", color: "var(--slate)" }}
                 >
-                  Geen diensten voor deze club in week {week.week}.
+                  Geen medewerkers met diensten voor deze club in week {week.week}.
                 </td>
               </tr>
             ) : (
@@ -218,6 +241,7 @@ export default function RosterPage() {
             )}
           </tbody>
         </table>
+        )}
       </div>
 
       {/* Notes (filtered: no legend, render markdown bold + code) */}
