@@ -160,12 +160,21 @@ function parseRosterBody(
   const days: string[] = [];
   const startD = new Date(startDate + "T00:00:00Z");
 
-  // Day-of-week targets for Thu(4), Fri(5), Sat(6), Sun(0)
-  const targetDows = [4, 5, 6, 0];
+  // Day-of-week map (English + Dutch abbreviations)
+  const dowMap: Record<string, number> = {
+    "Mon": 1, "Tue": 2, "Wed": 3, "Thu": 4, "Fri": 5, "Sat": 6, "Sun": 0,
+    "Ma": 1, "Di": 2, "Wo": 3, "Do": 4, "Vr": 5, "Za": 6, "Zo": 0,
+  };
 
   for (let i = 1; i < headerCells.length; i++) {
     dayLabels.push(headerCells[i]);
-    const targetDow = targetDows[i - 1];
+    // Extract DOW prefix from label (e.g. "Di 30/06" or "Thu 02/07")
+    const prefix = headerCells[i].split(/[\s/]/)[0];
+    const targetDow = dowMap[prefix];
+    if (targetDow === undefined) {
+      console.warn(`  ⚠ Unknown day prefix: "${prefix}" in "${headerCells[i]}"`);
+      continue;
+    }
     const daysToAdd = (targetDow - startD.getUTCDay() + 7) % 7;
     const d = new Date(startD);
     d.setUTCDate(startD.getUTCDate() + daysToAdd);
