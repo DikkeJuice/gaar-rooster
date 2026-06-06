@@ -10,7 +10,7 @@ interface Match {
 }
 
 function formatDate(dateStr: string): string {
-  const d = new Date(dateStr + "T00:00:00");
+  const d = new Date(dateStr + "T00:00:00Z");
   const days = ["zo", "ma", "di", "wo", "do", "vr", "za"];
   const day = days[d.getUTCDay()];
   const date = d.getUTCDate();
