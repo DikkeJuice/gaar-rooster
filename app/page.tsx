@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import rosterData from "@/data/roster-data.json";
 import AnnotationPanel from "./AnnotationPanel";
+import AuthGate from "./AuthGate";
 
 interface Shift {
   start: string;
@@ -104,7 +105,7 @@ export default function RosterPage() {
   }));
 
   return (
-    <>
+    <AuthGate>
       {/* Week navigation */}
       <div className="week-nav">
         <button
@@ -251,6 +252,6 @@ export default function RosterPage() {
           kraamwinkel.catering
         </a>
       </div>
-    </>
+    </AuthGate>
   );
 }

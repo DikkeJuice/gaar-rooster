@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Gaar Culinair — Rooster",
-  description: "Live roosterweergave voor HC Delfshaven & Neptunus",
+  description: "Interne roosterweergave voor HC Delfshaven & Neptunus",
+  robots: "noindex, nofollow",
   icons: {
     icon: "/favicon.ico",
   },
