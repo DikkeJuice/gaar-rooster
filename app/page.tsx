@@ -210,14 +210,29 @@ export default function RosterPage() {
         </table>
       </div>
 
-      {/* Notes */}
-      {week.notes.length > 0 && (
-        <div className="roster-notes">
-          {week.notes.map((n, i) => (
-            <div key={i}>{n}</div>
-          ))}
-        </div>
-      )}
+      {/* Notes (filtered: no legend, render markdown bold + code) */}
+      {(() => {
+        const realNotes = week.notes.filter(
+          (n) => !n.startsWith("**ZK** =") && !n.startsWith("ZK =")
+        );
+        if (realNotes.length === 0) return null;
+
+        function renderNote(text: string) {
+          // Bold: **text** → <strong>
+          let html = text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+          // Inline code: `text` → <code>
+          html = html.replace(/`(.+?)`/g, "<code>$1</code>");
+          return html;
+        }
+
+        return (
+          <div className="roster-notes">
+            {realNotes.map((n, i) => (
+              <div key={i} dangerouslySetInnerHTML={{ __html: renderNote(n) }} />
+            ))}
+          </div>
+        );
+      })()}
 
       {/* Annotations */}
       <AnnotationPanel
