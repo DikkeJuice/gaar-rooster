@@ -103,9 +103,16 @@ body {
 .club-filter {
   display: flex;
   gap: 0.35rem;
+  flex-wrap: wrap;
+}
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.5rem 0.75rem;
   background: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  flex-wrap: wrap;
 }
 
 .club-filter button {
@@ -346,4 +353,136 @@ body {
   color: var(--success);
   font-size: 0.8rem;
   margin-top: 0.35rem;
+}
+
+/* Name filter */
+.name-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+}
+
+.name-filter select {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-indigo);
+  cursor: pointer;
+  min-width: 160px;
+  transition: border-color 0.15s;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' stroke='%236B7280' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding-right: 1.8rem;
+}
+
+.name-filter select:focus {
+  outline: none;
+  border-color: var(--muted-gold);
+}
+
+.name-filter-clear {
+  background: none;
+  border: none;
+  color: var(--slate);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.name-filter-clear:hover {
+  color: var(--danger);
+}
+
+/* Personal schedule view */
+.personal-schedule {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.personal-schedule h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: var(--ink-indigo);
+}
+
+.personal-schedule h2 span {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--slate);
+}
+
+.personal-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.personal-table th {
+  background: var(--ink-indigo);
+  color: white;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.personal-table td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 0.85rem;
+}
+
+.personal-table tr:last-child td {
+  border-bottom: none;
+}
+
+.personal-table tr:hover td {
+  background: rgba(249, 244, 232, 0.4);
+}
+
+.personal-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--slate);
+  background: white;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 640px) {
+  .name-filter {
+    margin-left: 0;
+    width: 100%;
+  }
+  .name-filter select {
+    width: 100%;
+  }
+  .personal-schedule {
+    padding: 0.5rem;
+  }
+  .personal-table th,
+  .personal-table td {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.75rem;
+  }
 }

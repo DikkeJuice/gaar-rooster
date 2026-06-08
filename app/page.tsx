@@ -46,6 +46,11 @@ type ClubFilter = "all" | "NEP" | "HCD";
 const typedData = rosterData as { weeks: RosterWeek[]; generated: string };
 const WEEKS = typedData.weeks;
 
+// Collect all unique employee names across all weeks
+const ALL_EMPLOYEES = [...new Set(
+  WEEKS.flatMap((w) => w.employees.map((e) => e.name))
+)].sort();
+
 function formatDateRange(start: string, end: string): string {
   const s = new Date(start + "T00:00:00Z");
   const e = new Date(end + "T00:00:00Z");
@@ -64,7 +69,6 @@ function formatDateRange(start: string, end: string): string {
 }
 
 function formatDayLabel(label: string): string {
-  // "Thu 18/06" → "do 18/06" → on mobile: "do 18"
   const dayMap: Record<string, string> = {
     Mon: "ma", Tue: "di", Wed: "wo", Thu: "do", Fri: "vr", Sat: "za", Sun: "zo",
   };
@@ -78,12 +82,20 @@ function formatDayLabel(label: string): string {
 }
 
 function formatDayLabelMobile(label: string): string {
-  // "Thu 18/06" → "do 18" (drop month)
   return formatDayLabel(label).replace(/\/\d+$/, "");
 }
 
+function formatDutchDate(isoDate: string): string {
+  const d = new Date(isoDate + "T00:00:00Z");
+  const months = [
+    "jan", "feb", "mrt", "apr", "mei", "jun",
+    "jul", "aug", "sep", "okt", "nov", "dec",
+  ];
+  const days = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+  return `${days[d.getUTCDay()]} ${d.getUTCDate()} ${months[d.getUTCMonth()]}`;
+}
+
 export default function RosterPage() {
-  // Find current week (containing today)
   const today = new Date().toISOString().split("T")[0];
   const currentWeekIdx = useMemo(() => {
     const idx = WEEKS.findIndex(
@@ -94,6 +106,7 @@ export default function RosterPage() {
 
   const [weekIdx, setWeekIdx] = useState(currentWeekIdx);
   const [clubFilter, setClubFilter] = useState<ClubFilter>("all");
+  const [nameFilter, setNameFilter] = useState<string>("");
 
   const week = WEEKS[weekIdx];
   if (!week) {
@@ -104,7 +117,40 @@ export default function RosterPage() {
     );
   }
 
-  // Filter employees: show only those with shifts at the selected club
+  // ── Personal schedule view (when a name is selected) ──
+  const personalShifts = useMemo(() => {
+    if (!nameFilter) return [];
+
+    const shifts: {
+      date: string;
+      week: number;
+      start: string;
+      end: string;
+      location: string;
+    }[] = [];
+
+    for (const w of WEEKS) {
+      const emp = w.employees.find((e) => e.name === nameFilter);
+      if (!emp) continue;
+      for (const [date, shift] of Object.entries(emp.shifts)) {
+        if (!shift) continue;
+        if (clubFilter !== "all" && shift.location !== clubFilter) continue;
+        shifts.push({
+          date,
+          week: w.week,
+          start: shift.start,
+          end: shift.end,
+          location: shift.location,
+        });
+      }
+    }
+
+    // Sort by date ascending
+    shifts.sort((a, b) => a.date.localeCompare(b.date));
+    return shifts;
+  }, [nameFilter, clubFilter]);
+
+  // ── Regular grid view (no name filter) ──
   const filteredEmployees = useMemo(() => {
     if (clubFilter === "all") return week.employees;
 
@@ -115,7 +161,6 @@ export default function RosterPage() {
     });
   }, [week, clubFilter]);
 
-  // Day columns — hide days with zero shifts for current club filter
   const dayColumns = useMemo(() => {
     const allDays = week.days.map((date, i) => ({
       date,
@@ -123,7 +168,6 @@ export default function RosterPage() {
       labelShort: formatDayLabelMobile(week.dayLabels[i]),
     }));
 
-    // Check which employees to scan for shifts
     const pool = clubFilter === "all" ? week.employees : filteredEmployees;
 
     return allDays.filter((day) => {
@@ -152,7 +196,7 @@ export default function RosterPage() {
         </button>
       </div>
 
-      {/* Quick week jump — horizontal scroll strip */}
+      {/* Quick week jump */}
       <div className="week-strip">
         {WEEKS.map((w, i) => (
           <button
@@ -165,142 +209,214 @@ export default function RosterPage() {
         ))}
       </div>
 
-      {/* Club filter */}
-      <div className="club-filter">
-        <button
-          onClick={() => setClubFilter("all")}
-          className={clubFilter === "all" ? "active" : ""}
-        >
-          Alle clubs
-        </button>
-        <button
-          onClick={() => setClubFilter("NEP")}
-          className={clubFilter === "NEP" ? "active" : ""}
-        >
-          ⚾ Neptunus
-        </button>
-        <button
-          onClick={() => setClubFilter("HCD")}
-          className={clubFilter === "HCD" ? "active" : ""}
-        >
-          🏑 HC Delfshaven
-        </button>
-      </div>
-
-      {/* Roster grid */}
-      <div className="roster-grid">
-        {dayColumns.length === 0 ? (
-          <div
-            style={{
-              textAlign: "center",
-              padding: "2.5rem 1rem",
-              color: "var(--slate)",
-              background: "white",
-              borderRadius: "8px",
-              fontSize: "0.9rem",
-            }}
+      {/* Club filter + Name filter */}
+      <div className="filters-row">
+        <div className="club-filter">
+          <button
+            onClick={() => setClubFilter("all")}
+            className={clubFilter === "all" ? "active" : ""}
           >
-            Geen diensten voor {clubFilter === "all" ? "deze week" : clubFilter === "NEP" ? "Neptunus" : "HC Delfshaven"} in week {week.week}.
-          </div>
-        ) : (
-        <table className="roster-table">
-          <thead>
-            <tr>
-              <th>Medewerker</th>
-              {dayColumns.map((dc) => (
-                <th key={dc.date}>
-                  <span className="day-label-full">{dc.label}</span>
-                  <span className="day-label-short">{dc.labelShort}</span>
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {filteredEmployees.length === 0 ? (
-              <tr>
-                <td
-                  colSpan={dayColumns.length + 1}
-                  style={{ textAlign: "center", padding: "2rem", color: "var(--slate)" }}
-                >
-                  Geen medewerkers met diensten voor deze club in week {week.week}.
-                </td>
-              </tr>
-            ) : (
-              filteredEmployees.map((emp) => (
-                <tr key={emp.name}>
-                  <td className="employee-name">{emp.name}</td>
-                  {dayColumns.map((dc) => {
-                    const shift = emp.shifts[dc.date];
-                    if (!shift) {
-                      return (
-                        <td key={dc.date} className="shift-cell empty">
-                          —
-                        </td>
-                      );
-                    }
-                    return (
-                      <td key={dc.date} className="shift-cell">
-                        {shift.start} – {shift.end}
-                        <span className={`shift-badge ${shift.location.toLowerCase()}`}>
-                          {shift.location}
-                        </span>
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-        )}
+            Alle clubs
+          </button>
+          <button
+            onClick={() => setClubFilter("NEP")}
+            className={clubFilter === "NEP" ? "active" : ""}
+          >
+            ⚾ Neptunus
+          </button>
+          <button
+            onClick={() => setClubFilter("HCD")}
+            className={clubFilter === "HCD" ? "active" : ""}
+          >
+            🏑 HC Delfshaven
+          </button>
+        </div>
+
+        <div className="name-filter">
+          <select
+            value={nameFilter}
+            onChange={(e) => setNameFilter(e.target.value)}
+          >
+            <option value="">👤 Alle medewerkers</option>
+            {ALL_EMPLOYEES.map((name) => (
+              <option key={name} value={name}>
+                {name}
+              </option>
+            ))}
+          </select>
+          {nameFilter && (
+            <button
+              className="name-filter-clear"
+              onClick={() => setNameFilter("")}
+              title="Wis filter"
+            >
+              ✕
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* Notes + Matches */}
-      {(() => {
-        const realNotes = week.notes.filter(
-          (n) => !n.startsWith("**ZK** =") && !n.startsWith("ZK =")
-        );
+      {/* ── PERSONAL SCHEDULE VIEW ── */}
+      {nameFilter && (
+        <div className="personal-schedule">
+          <h2>
+            {nameFilter}
+            {clubFilter !== "all" && (
+              <span> · {clubFilter === "NEP" ? "Neptunus" : "HC Delfshaven"}</span>
+            )}
+          </h2>
 
-        const filteredMatches = clubFilter === "all"
-          ? week.matches
-          : week.matches.filter((m) =>
-              clubFilter === "NEP" ? m.club === "Neptunus" : m.club === "HC Delfshaven"
+          {personalShifts.length === 0 ? (
+            <div className="personal-empty">
+              Geen diensten{clubFilter !== "all" ? ` bij ${clubFilter === "NEP" ? "Neptunus" : "HC Delfshaven"}` : ""} gevonden.
+            </div>
+          ) : (
+            <table className="personal-table">
+              <thead>
+                <tr>
+                  <th>Datum</th>
+                  <th>Tijd</th>
+                  <th>Locatie</th>
+                </tr>
+              </thead>
+              <tbody>
+                {personalShifts.map((s, i) => (
+                  <tr key={i}>
+                    <td>{formatDutchDate(s.date)}</td>
+                    <td>
+                      {s.start} – {s.end}
+                    </td>
+                    <td>
+                      <span className={`shift-badge ${s.location.toLowerCase()}`}>
+                        {s.location}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
+
+      {/* ── STANDARD GRID VIEW ── */}
+      {!nameFilter && (
+        <>
+          <div className="roster-grid">
+            {dayColumns.length === 0 ? (
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "2.5rem 1rem",
+                  color: "var(--slate)",
+                  background: "white",
+                  borderRadius: "8px",
+                  fontSize: "0.9rem",
+                }}
+              >
+                Geen diensten voor {clubFilter === "all" ? "deze week" : clubFilter === "NEP" ? "Neptunus" : "HC Delfshaven"} in week {week.week}.
+              </div>
+            ) : (
+            <table className="roster-table">
+              <thead>
+                <tr>
+                  <th>Medewerker</th>
+                  {dayColumns.map((dc) => (
+                    <th key={dc.date}>
+                      <span className="day-label-full">{dc.label}</span>
+                      <span className="day-label-short">{dc.labelShort}</span>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {filteredEmployees.length === 0 ? (
+                  <tr>
+                    <td
+                      colSpan={dayColumns.length + 1}
+                      style={{ textAlign: "center", padding: "2rem", color: "var(--slate)" }}
+                    >
+                      Geen medewerkers met diensten voor deze club in week {week.week}.
+                    </td>
+                  </tr>
+                ) : (
+                  filteredEmployees.map((emp) => (
+                    <tr key={emp.name}>
+                      <td className="employee-name">{emp.name}</td>
+                      {dayColumns.map((dc) => {
+                        const shift = emp.shifts[dc.date];
+                        if (!shift) {
+                          return (
+                            <td key={dc.date} className="shift-cell empty">
+                              —
+                            </td>
+                          );
+                        }
+                        return (
+                          <td key={dc.date} className="shift-cell">
+                            {shift.start} – {shift.end}
+                            <span className={`shift-badge ${shift.location.toLowerCase()}`}>
+                              {shift.location}
+                            </span>
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+            )}
+          </div>
+
+          {/* Notes + Matches */}
+          {(() => {
+            const realNotes = week.notes.filter(
+              (n) => !n.startsWith("**ZK** =") && !n.startsWith("ZK =")
             );
 
-        if (realNotes.length === 0 && filteredMatches.length === 0) return null;
+            const filteredMatches = clubFilter === "all"
+              ? week.matches
+              : week.matches.filter((m) =>
+                  clubFilter === "NEP" ? m.club === "Neptunus" : m.club === "HC Delfshaven"
+                );
 
-        return (
-          <>
-            {realNotes.length > 0 && (
-              <div className="roster-notes">
-                {realNotes.map((n, i) => (
-                  <div
-                    key={i}
-                    dangerouslySetInnerHTML={{
-                      __html: (() => {
-                        let html = n.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-                        html = html.replace(/`(.+?)`/g, "<code>$1</code>");
-                        return html;
-                      })(),
-                    }}
-                  />
-                ))}
-              </div>
-            )}
-            <MatchList matches={filteredMatches} />
-          </>
-        );
-      })()}
+            if (realNotes.length === 0 && filteredMatches.length === 0) return null;
 
-      {/* Annotations */}
-      <AnnotationPanel
-        week={week.week}
-        employees={week.employees.map((e) => e.name)}
-        days={week.days.map((date, i) => ({
-          date,
-          label: formatDayLabel(week.dayLabels[i]),
-        }))}
-      />
+            return (
+              <>
+                {realNotes.length > 0 && (
+                  <div className="roster-notes">
+                    {realNotes.map((n, i) => (
+                      <div
+                        key={i}
+                        dangerouslySetInnerHTML={{
+                          __html: (() => {
+                            let html = n.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+                            html = html.replace(/`(.+?)`/g, "<code>$1</code>");
+                            return html;
+                          })(),
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
+                <MatchList matches={filteredMatches} />
+              </>
+            );
+          })()}
+
+          {/* Annotations */}
+          <AnnotationPanel
+            week={week.week}
+            employees={week.employees.map((e) => e.name)}
+            days={week.days.map((date, i) => ({
+              date,
+              label: formatDayLabel(week.dayLabels[i]),
+            }))}
+          />
+        </>
+      )}
 
       {/* Footer */}
       <div className="site-footer">
