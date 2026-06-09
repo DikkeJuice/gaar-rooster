@@ -107,6 +107,7 @@ export default function RosterPage() {
   const [weekIdx, setWeekIdx] = useState(currentWeekIdx);
   const [clubFilter, setClubFilter] = useState<ClubFilter>("all");
   const [nameFilter, setNameFilter] = useState<string>("");
+  const [disclaimerDismissed, setDisclaimerDismissed] = useState(false);
 
   const week = WEEKS[weekIdx];
   if (!week) {
@@ -431,10 +432,56 @@ export default function RosterPage() {
       )}
 
       {/* Footer */}
-      {showNepDisclaimer && (
-        <div className="nep-disclaimer">
-          * Eindtijden bij Neptunus zijn afhankelijk van het wedstrijdverloop (innings).<br />
-          Door het accepteren van deze dienst ga je akkoord met mogelijke uitloop.
+      {showNepDisclaimer && !disclaimerDismissed && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 9999,
+            background: "var(--ink-indigo)",
+            borderTop: "2px solid var(--nep)",
+            boxShadow: "0 -4px 20px rgba(0,0,0,0.15)",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.75rem",
+              maxWidth: 900,
+              margin: "0 auto",
+              padding: "0.7rem 1rem",
+            }}
+          >
+            <span style={{ fontSize: "1.3rem", flexShrink: 0, lineHeight: 1 }}>⚠️</span>
+            <span style={{ flex: 1, fontSize: "0.8rem", color: "var(--washi-cream)", lineHeight: 1.45 }}>
+              <strong style={{ color: "#93c5fd" }}>Let op:</strong> Eindtijden bij Neptunus zijn afhankelijk van het wedstrijdverloop (innings). Door het accepteren van deze dienst ga je akkoord met mogelijke uitloop.
+            </span>
+            <button
+              onClick={() => setDisclaimerDismissed(true)}
+              aria-label="Sluiten"
+              style={{
+                flexShrink: 0,
+                background: "rgba(255,255,255,0.12)",
+                border: "none",
+                color: "var(--washi-cream)",
+                width: 28,
+                height: 28,
+                borderRadius: 6,
+                fontSize: "0.85rem",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: 0,
+                lineHeight: 1,
+              }}
+            >
+              ✕
+            </button>
+          </div>
         </div>
       )}
       <div className="site-footer">
