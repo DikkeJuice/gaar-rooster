@@ -486,3 +486,15 @@ body {
     font-size: 0.75rem;
   }
 }
+
+/* ── NEP disclaimer ── */
+.nep-disclaimer {
+  background: rgba(37, 99, 235, 0.08);
+  border-left: 3px solid var(--nep);
+  margin: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.78rem;
+  color: var(--slate);
+  line-height: 1.5;
+}

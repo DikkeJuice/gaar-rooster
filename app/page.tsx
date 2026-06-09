@@ -175,6 +175,18 @@ export default function RosterPage() {
     });
   }, [week, clubFilter, filteredEmployees]);
 
+  // ── Nep disclaimer: show when NEP shifts are visible ──
+  const showNepDisclaimer = useMemo(() => {
+    if (nameFilter && personalShifts.length > 0) {
+      return personalShifts.some((s) => s.location === "NEP");
+    }
+    if (clubFilter === "HCD") return false;
+    const pool = clubFilter === "all" ? week.employees : filteredEmployees;
+    return pool.some((emp) =>
+      Object.values(emp.shifts).some((s) => s && s.location === "NEP")
+    );
+  }, [nameFilter, personalShifts, clubFilter, week, filteredEmployees]);
+
   return (
     <AuthGate>
       {/* Week navigation */}
@@ -284,7 +296,7 @@ export default function RosterPage() {
                   <tr key={i}>
                     <td>{formatDutchDate(s.date)}</td>
                     <td>
-                      {s.start} – {s.end}
+                      {s.start} – {s.end}{s.location === "NEP" ? "*" : ""}
                     </td>
                     <td>
                       <span className={`shift-badge ${s.location.toLowerCase()}`}>
@@ -354,7 +366,7 @@ export default function RosterPage() {
                         }
                         return (
                           <td key={dc.date} className="shift-cell">
-                            {shift.start} – {shift.end}
+                            {shift.start} – {shift.end}{shift.location === "NEP" ? "*" : ""}
                             <span className={`shift-badge ${shift.location.toLowerCase()}`}>
                               {shift.location}
                             </span>
@@ -419,6 +431,12 @@ export default function RosterPage() {
       )}
 
       {/* Footer */}
+      {showNepDisclaimer && (
+        <div className="nep-disclaimer">
+          * Eindtijden bij Neptunus zijn afhankelijk van het wedstrijdverloop (innings).<br />
+          Door het accepteren van deze dienst ga je akkoord met mogelijke uitloop.
+        </div>
+      )}
       <div className="site-footer">
         Gaar Culinair · Rooster bijgewerkt {new Date(typedData.generated).toLocaleDateString("nl-NL")} ·{" "}
         <a
