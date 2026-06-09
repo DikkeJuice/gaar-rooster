@@ -26,7 +26,7 @@ interface Shift {
 }
 
 // ── Config ──
-const API_BASE = "https://petra-unsulliable-alyce.ngrok-free.dev";
+const API_BASE = "/api/admin-proxy";
 
 // ── API helper ──
 function getToken(): string | null {
@@ -38,6 +38,7 @@ async function api(path: string, options: RequestInit = {}): Promise<any> {
   const token = getToken();
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
+    "ngrok-skip-browser-warning": "1",
     ...(options.headers as Record<string, string> || {}),
   };
   if (token) headers["Authorization"] = `Bearer ${token}`;
