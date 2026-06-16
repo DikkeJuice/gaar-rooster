@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const API_BASE = "https://petra-unsulliable-alyce.ngrok-free.dev";
+const API_BASE = "https://hysnprvzeeayxalgicsj.supabase.co/functions/v1";
 
 export async function GET(request: NextRequest) {
   return proxy(request);
@@ -19,15 +19,22 @@ export async function DELETE(request: NextRequest) {
 }
 
 async function proxy(request: NextRequest) {
-  const path = request.nextUrl.pathname.replace("/api/admin-proxy", "");
+  // Strip /api/admin-proxy prefix, then strip optional /api/ prefix
+  let path = request.nextUrl.pathname.replace("/api/admin-proxy", "");
+  path = path.replace(/^\/api\//, "/");
+  // Map legacy paths to Edge Function names
+  path = path.replace("/auth/login", "/auth");
   const search = request.nextUrl.search;
+
+  // Routes now go direct to Supabase Edge Functions:
+  // /api/admin-proxy/auth → /functions/v1/auth
+  // /api/admin-proxy/weeks → /functions/v1/weeks
+  // etc.
   const url = `${API_BASE}${path}${search}`;
 
-  const headers: Record<string, string> = {
-    "ngrok-skip-browser-warning": "1",
-  };
+  const headers: Record<string, string> = {};
 
-  // Forward Authorization header
+  // Forward Authorization header (application JWT)
   const auth = request.headers.get("authorization");
   if (auth) headers["Authorization"] = auth;
 
@@ -40,11 +47,16 @@ async function proxy(request: NextRequest) {
     : await request.text();
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    
     const res = await fetch(url, {
       method: request.method,
       headers,
       body: body || undefined,
+      signal: controller.signal,
     });
+    clearTimeout(timeout);
 
     const data = await res.text();
     const responseHeaders: Record<string, string> = {};

@@ -24,9 +24,19 @@ interface Shift {
   end_time: string;
   location: string;
 }
+interface Match {
+  id: number;
+  week_id: number;
+  date: string;
+  time: string;
+  club: string;
+  team: string;
+  opponent: string;
+  field: string;
+}
 
 // ── Config ──
-const API_BASE = "/api/admin-proxy";
+const API_BASE = "https://hysnprvzeeayxalgicsj.supabase.co/functions/v1";
 
 // ── API helper ──
 function getToken(): string | null {
@@ -38,7 +48,6 @@ async function api(path: string, options: RequestInit = {}): Promise<any> {
   const token = getToken();
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    "ngrok-skip-browser-warning": "1",
     ...(options.headers as Record<string, string> || {}),
   };
   if (token) headers["Authorization"] = `Bearer ${token}`;
@@ -72,6 +81,11 @@ const css = {
   badge: (loc: string) => ({ display: "inline-block", padding: "2px 8px", borderRadius: 4, fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", background: loc === "NEP" ? "#dbeafe" : "#dcfce7", color: loc === "NEP" ? "#1e40af" : "#166534" }),
   inlineInput: { width: 65, padding: "0.2rem 0.3rem", borderRadius: 3, border: "1px solid #ddd", fontSize: "0.8rem", textAlign: "center" } as React.CSSProperties,
   saveBtn: { padding: "0.2rem 0.5rem", background: "var(--muted-gold, #C5A059)", color: "var(--ink-indigo, #1A2A3A)", border: "none", borderRadius: 4, cursor: "pointer", fontSize: "0.75rem", fontWeight: 600 } as React.CSSProperties,
+  matchSection: { marginBottom: "1.5rem" } as React.CSSProperties,
+  matchHeader: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.75rem" } as React.CSSProperties,
+  matchTitle: { fontSize: "1.1rem", fontWeight: 700, color: "var(--ink-indigo, #1A2A3A)", margin: 0 } as React.CSSProperties,
+  matchStats: { display: "flex", gap: "1.5rem", marginBottom: "0.75rem", fontSize: "0.8rem", color: "var(--slate, #6B7280)" } as React.CSSProperties,
+  clubBadge: (club: string) => ({ display: "inline-block", padding: "2px 8px", borderRadius: 4, fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase" as const, background: club === "Neptunus" ? "#dbeafe" : "#dcfce7", color: club === "Neptunus" ? "#1e40af" : "#166534" }),
 };
 
 // ── Login Screen ──
@@ -85,7 +99,7 @@ function LoginScreen() {
     setError("");
     setLoading(true);
     try {
-      const data = await api("/api/auth/login", {
+      const data = await api("/auth", {
         method: "POST",
         body: JSON.stringify({ username, password }),
         headers: { "Content-Type": "application/json" },
@@ -133,6 +147,7 @@ export default function AdminClient() {
   const [weeks, setWeeks] = useState<Week[]>([]);
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [shifts, setShifts] = useState<Shift[]>([]);
+  const [matches, setMatches] = useState<Match[]>([]);
   const [selectedWeekId, setSelectedWeekId] = useState<number | null>(null);
   const [error, setError] = useState("");
 
@@ -157,7 +172,7 @@ export default function AdminClient() {
   // Load data
   const loadMeta = useCallback(async () => {
     try {
-      const [w, e] = await Promise.all([api("/api/weeks"), api("/api/employees")]);
+      const [w, e] = await Promise.all([api("/weeks"), api("/employees")]);
       setWeeks(w);
       setEmployees(e);
       if (w.length > 0) {
@@ -173,7 +188,7 @@ export default function AdminClient() {
 
   const loadShifts = useCallback(async (weekId: number) => {
     try {
-      const s = await api(`/api/shifts?week_id=${weekId}`);
+      const s = await api(`/shifts?week_id=${weekId}`);
       setShifts(s);
     } catch (e: any) {
       if (e.message === "SESSION_EXPIRED") { setAuthed(false); return; }
@@ -181,15 +196,25 @@ export default function AdminClient() {
     }
   }, []);
 
+  const loadMatches = useCallback(async (weekId: number) => {
+    try {
+      const m = await api(`/matches?week_id=${weekId}`);
+      setMatches(m);
+    } catch (e: any) {
+      if (e.message === "SESSION_EXPIRED") { setAuthed(false); return; }
+      // Silent — matches are non-critical
+    }
+  }, []);
+
   useEffect(() => { if (authed) loadMeta(); }, [authed, loadMeta]);
-  useEffect(() => { if (selectedWeekId) loadShifts(selectedWeekId); }, [selectedWeekId, loadShifts]);
+  useEffect(() => { if (selectedWeekId) { loadShifts(selectedWeekId); loadMatches(selectedWeekId); } }, [selectedWeekId, loadShifts, loadMatches]);
 
   // ── CRUD actions ──
   const addShift = async () => {
     if (!newEmp || !newDate || !newStart || !newEnd || !selectedWeekId) return;
     setError("");
     try {
-      await api("/api/shifts", {
+      await api("/shifts", {
         method: "POST",
         body: JSON.stringify({
           employee_name: newEmp,
@@ -218,7 +243,7 @@ export default function AdminClient() {
     if (!shift) return;
     setError("");
     try {
-      await api(`/api/shifts/${editId}`, {
+      await api(`/shifts/${editId}`, {
         method: "PUT",
         body: JSON.stringify({
           date: shift.date,
@@ -236,7 +261,7 @@ export default function AdminClient() {
     if (!confirm("Deze shift definitief verwijderen?")) return;
     setError("");
     try {
-      await api(`/api/shifts/${id}`, { method: "DELETE" });
+      await api(`/shifts/${id}`, { method: "DELETE" });
       loadShifts(selectedWeekId!);
     } catch (e: any) { setError(String(e)); }
   };
@@ -283,6 +308,50 @@ export default function AdminClient() {
           <option value="HCD">HC Delfshaven</option>
         </select>
         <button onClick={addShift} style={css.addBtn}>+ Toevoegen</button>
+      </div>
+
+      {/* Match overview */}
+      <div style={css.matchSection}>
+        <div style={css.matchHeader}>
+          <h2 style={css.matchTitle}>Wedstrijden deze week</h2>
+          <div style={css.matchStats}>
+            {matches.length > 0 && (
+              <>
+                <span>🏟️ {matches.length} wedstrijden</span>
+                <span>🔵 Neptunus: {matches.filter(m => m.club === "Neptunus").length}</span>
+                <span>🟢 HCD: {matches.filter(m => m.club === "HCD").length}</span>
+              </>
+            )}
+          </div>
+        </div>
+        {matches.length > 0 ? (
+          <table style={css.table}>
+            <thead>
+              <tr>
+                <th style={css.th}>Datum</th>
+                <th style={css.th}>Tijd</th>
+                <th style={css.th}>Club</th>
+                <th style={css.th}>Team</th>
+                <th style={css.th}>Tegenstander</th>
+                <th style={css.th}>Veld</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matches.map(m => (
+                <tr key={m.id}>
+                  <td style={css.td}>{m.date}</td>
+                  <td style={css.td}>{m.time}</td>
+                  <td style={css.td}><span style={css.clubBadge(m.club)}>{m.club === "Neptunus" ? "NEP" : "HCD"}</span></td>
+                  <td style={{ ...css.td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{m.team}</td>
+                  <td style={{ ...css.td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{m.opponent}</td>
+                  <td style={css.td}>{m.field}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p style={{ color: "#999", fontSize: "0.85rem", margin: "0 0 1rem" }}>Geen wedstrijden deze week</p>
+        )}
       </div>
 
       {/* Shifts table */}
